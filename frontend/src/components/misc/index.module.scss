@@ -1,0 +1,79 @@
+.Layout {
+    height: calc(100% - 120px);
+    margin-left: 120px;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background-color: rgb(34, 33, 33);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > * {
+        margin: 50px 0;
+    }
+}
+
+#DashboardIcon {
+    cursor: pointer;
+}
+#DashboardIcon:hover {
+    color: rgb(201, 0, 0);
+}
+
+#TerminalIcon {
+    cursor: pointer;
+}
+#TerminalIcon:hover {
+    color: rgb(201, 0, 0);
+}
+
+#WrenchIcon {
+    cursor: pointer;
+}
+#WrenchIcon:hover {
+    color: rgb(201, 0, 0);
+}
+
+.Avatar {
+    border-radius: 50%;
+}
+
+.Appbar {
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 40px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    :last-child {
+        margin-left: 24px;
+    }
+}
+
+.Menu:hover {
+    color: rgb(201, 0, 0);
+}

@@ -1,0 +1,27 @@
+.Container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.GuildItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #212121;
+    border-radius: 5px;
+    border: 1px solid #ffffff2f;
+    margin: 8px 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#PointerCursor {
+    cursor: pointer;
+}
+
+#ButtonAnimation:hover {
+    border-color: rgb(201, 0, 0);
+}

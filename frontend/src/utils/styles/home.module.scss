@@ -1,0 +1,28 @@
+#underlineanimation:hover {
+  color: rgb(201, 0, 0);
+  text-decoration: underline;
+}
+#underlineanimation {
+  margin-top: 170px;
+  cursor: pointer;
+}
+  
+#MainButtons {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  padding: 10px 75px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #58585863;
+  margin: 8px 0;
+  box-shadow: 0px 1px 5px 0px #00000040;
+  cursor: pointer;
+  user-select: none;
+}
+
+#MainButtons:hover {
+  border-color: rgb(201, 0, 0);
+}

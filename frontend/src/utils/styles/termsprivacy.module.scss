@@ -1,0 +1,21 @@
+.Container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Button {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #6d6d6d;
+    font-family: "DM Sans";
+    margin-left: 570px;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: white;
+    color: black;
+}

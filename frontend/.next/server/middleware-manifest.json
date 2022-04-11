@@ -1,0 +1,24 @@
+{
+  "sortedMiddleware": [
+    "/dashboard/[id]"
+  ],
+  "clientInfo": [
+    [
+      "/dashboard/[id]",
+      false
+    ]
+  ],
+  "middleware": {
+    "/dashboard/[id]": {
+      "env": [],
+      "files": [
+        "server/middleware-runtime.js",
+        "server/pages/dashboard/[id]/_middleware.js"
+      ],
+      "name": "pages/dashboard/[id]/_middleware",
+      "page": "/dashboard/[id]",
+      "regexp": "^/dashboard/(?<id>[^/]+?)(?:(/.*)?)$"
+    }
+  },
+  "version": 1
+}
