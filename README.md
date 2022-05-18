@@ -1,6 +1,8 @@
 ## Foxy Bot
 
-My own Discord Bot with Dashboard (under construction)
+My own Discord Bot with Dashboard (under construction)!
+
+[foxy-bot.com](https://foxy-bot.com)
 
 # Informations
 
