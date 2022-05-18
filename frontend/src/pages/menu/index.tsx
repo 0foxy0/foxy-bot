@@ -1,7 +1,7 @@
 import { GetServerSidePropsContext, NextPage } from "next";
 import { fetchMutualGuilds } from "../../utils/api";
 import { Guild } from "../../utils/types";
-import styles from "../../utils/styles/menu.module.scss";
+import styles from "./index.module.scss";
 import styles2 from "../../utils/styles/termsprivacy.module.scss";
 import { useRouter } from "next/router";
 import { getIcon } from "../../utils/helpers";
@@ -30,7 +30,7 @@ const MenuPage: NextPage<Props> = ({ guilds }) => {
 
                     ))}
                 </div>
-                <button className={styles2.Button} style={{ marginTop: "10px" }} onClick={() => router.push("/")}>Back</button>
+                <button className={styles2.Button} style={{ marginTop: "25px" }} onClick={() => router.push("/")}>Back</button>
             </div>
         </div>
 

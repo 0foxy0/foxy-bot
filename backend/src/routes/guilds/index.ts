@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { getGuildController, getGuildPermsController, getGuildsController } from "../../controllers/guilds";
-import { isAuthenticated } from "../../utils/middlewares";
+import { isAuthenticatedApi } from "../../utils/middlewares";
 
 const router = Router();
 
-router.get("/", isAuthenticated, getGuildsController);
-router.get("/:id/permissions", isAuthenticated, getGuildPermsController);
-router.get("/:id", isAuthenticated, getGuildController);
+router.get("/", isAuthenticatedApi, getGuildsController);
+router.get("/:id/permissions", isAuthenticatedApi, getGuildPermsController);
+router.get("/:id", isAuthenticatedApi, getGuildController);
 
 export default router;

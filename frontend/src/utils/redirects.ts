@@ -7,5 +7,5 @@ export const redirectInvite = () => {
 }
 
 export const redirectSupportServer = () => {
-    window.location.href = "https://discord.gg/eAkYkuenyq";
+    window.location.href = "";
 }

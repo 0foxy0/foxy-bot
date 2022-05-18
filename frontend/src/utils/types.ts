@@ -9,6 +9,13 @@ export type Guild = {
     owner: boolean;
     permissions: string;
     features: string[];
+    approximate_member_count: number;
+};
+
+export type Command = {
+    id: string;
+    name: string;
+    description: string;
 };
 
 export type NextPageWithLayout<T> = NextPage<T> & { getLayout: (page: ReactElement) => ReactNode; };

@@ -6,13 +6,11 @@ const TermsPage: NextPage = () => {
     const router = useRouter();
 
     return (
-        <div className="page">
-            <div className={styles.Container} style={{ userSelect: "none", msUserSelect: "none", MozUserSelect: "none", WebkitUserSelect: "none" }}>
-                <h1 style={{ fontWeight: 300, display: "flex", justifyContent: "center", textDecoration: "underline" }}>Terms of Service</h1>
-
-
+        <div style={{paddingRight: "50px", paddingLeft: "50px"}}>
+            <div className={styles.TextBlock}>
+                <h1 className={styles.Title}>Terms of Service</h1>
                 <h2>1. Terms</h2>
-                <p>By accessing this Website, accessible from https://foxybot.de, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.</p>
+                <p>By accessing this Website, accessible from https://foxy-bot.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.</p>
                 <h2>2. Use License</h2>
                 <p>Permission is granted to temporarily download one copy of the materials on Foxy's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
                 <ul>
@@ -36,10 +34,11 @@ const TermsPage: NextPage = () => {
                 <p>Please read our Privacy Policy.</p>
                 <h2>9. Governing Law</h2>
                 <p>Any claim related to Foxy's Website shall be governed by the laws of de without regards to its conflict of law provisions.</p>
-
-
+            </div>
+            <div>
                 <button className={styles.Button} onClick={() => router.push("/")}>Back</button>
-
+                <p style={{visibility: "hidden"}}>..</p>
+                <p style={{visibility: "hidden"}}>..</p>
             </div>
         </div>
     );

@@ -1,9 +1,8 @@
-.Container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .Button {
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     outline: none;
     border: none;
@@ -11,11 +10,30 @@
     color: white;
     background-color: #6d6d6d;
     font-family: "DM Sans";
-    margin-left: 570px;
     cursor: pointer;
+}
+
+.TextBlock {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.Title {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 .Button:hover {
     background-color: white;
     color: black;
+}
+
+@media only screen and (max-width: 720px) {
+    .TextBlock {
+        text-align: center;
+    }
 }

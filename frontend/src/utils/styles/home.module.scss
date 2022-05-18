@@ -1,10 +1,40 @@
-#underlineanimation:hover {
+.underlineanimation:hover {
   color: rgb(201, 0, 0);
   text-decoration: underline;
 }
-#underlineanimation {
-  margin-top: 170px;
+.underlineanimation {
   cursor: pointer;
+}
+
+.PageDiv {
+  height: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Logo {
+  max-width: 70%;
+  align-content: center;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.BotTitle {
+  font-size: 50px;
+  font-family: "Bebas Neue";
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  margin-bottom: 90px;
 }
   
 #MainButtons {
@@ -25,4 +55,87 @@
 
 #MainButtons:hover {
   border-color: rgb(201, 0, 0);
+}
+
+#Copyright {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  margin-top: 50px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+}
+
+@media only screen and (max-width: 465px) {
+  .PageDiv {
+    padding: 0;
+    justify-content: center;
+  }
+  
+  #Logo {
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  .BotTitle {
+    margin-top: 5px;
+    margin-bottom: auto;
+  }
+
+  #MainButtons {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  #Copyright {
+    font-size: 13px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .underlineanimation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .PageDiv {
+    padding: 0;
+    justify-content: center;
+  }
+  
+  #Logo {
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  .BotTitle {
+    margin-top: 5px;
+    margin-bottom: auto;
+  }
+
+  #MainButtons {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  #Copyright {
+    margin-top: 0;
+    font-size: 15px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .underlineanimation {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }

@@ -18,7 +18,7 @@ export function createApp(): Express {
 
     // Enable Sessions
     app.use(session({
-        secret: "HDAWUOFGOAWHFPAWHOUDGHAAFAWDFAWGAWDFAFHAOUDHGUA",
+        secret: "",
         resave: false,
         saveUninitialized: false,
         cookie: { maxAge: 86400000 * 7 },
@@ -30,7 +30,7 @@ export function createApp(): Express {
     app.use(passport.initialize());
     app.use(passport.session());
 
-    app.use((req, res, next) => setTimeout(() => next(), 800));
+    app.use((req, res, next) => setTimeout(() => next(), 1000));
     
     app.use("/api", routes);
     return app;

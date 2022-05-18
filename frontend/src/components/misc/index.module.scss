@@ -17,6 +17,10 @@
     justify-content: space-between;
 }
 
+.Hamburger {
+    display: none;
+}
+
 .Icons {
     display: flex;
     flex-direction: column;
@@ -44,6 +48,13 @@
     cursor: pointer;
 }
 #WrenchIcon:hover {
+    color: rgb(201, 0, 0);
+}
+
+#LogoutIcon {
+    cursor: pointer;
+}
+#LogoutIcon:hover {
     color: rgb(201, 0, 0);
 }
 
@@ -76,4 +87,35 @@
 
 .Menu:hover {
     color: rgb(201, 0, 0);
+}
+
+#MenuTag {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .Sidebar {
+        display: none;
+    }
+    .Menu {
+        display: none;
+    }
+    
+    .Hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .Hamburger:hover {
+        color: rgb(201, 0, 0);
+    }
+
+    .GuildName {
+        text-align: right;
+    }
+    .Layout {
+        margin-left: 0;
+    }
 }

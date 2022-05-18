@@ -5,4 +5,11 @@ export type PartialGuild = {
     owner: boolean;
     permissions: string;
     features: string[];
+    approximate_member_count: number;
+};
+
+export type PartialCommand = {
+    id: string;
+    name: string;
+    description: string;
 };

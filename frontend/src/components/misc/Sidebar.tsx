@@ -51,7 +51,7 @@ export const Sidebar: FC<Props> = ({ guild }) => {
     
     
             <div>
-                <RiLogoutCircleLine size={48} />
+                <RiLogoutCircleLine id={styles.LogoutIcon} size={48} onClick={() => window.location.href = "http://localhost:3001/api/logout"} />
             </div>
         </div>
     );
